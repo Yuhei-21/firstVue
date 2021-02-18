@@ -1,23 +1,16 @@
 <template>
   <v-app dark>
-    <v-toolbar
-      :clipped-left="clipped"
-      fixed
-      app
-    >
-      <v-toolbar-side-icon @click="drawer = !drawer" />
-      <v-toolbar-title v-text="title" />
+    <v-app-bar :clipped-left="clipped" fixed app >
+      <img src="hattorilogo.jpg" class="mr-1" >
+      <v-toolbar-title>{{title}}</v-toolbar-title>
       <v-spacer />
       <nuxt-link :to="page.to" class="ml-3" v-for="page in pages" :key="page.title">{{page.title}}</nuxt-link>
-    </v-toolbar>
+    </v-app-bar>
     <v-content>
       <nuxt />
       
     </v-content>
-    <v-footer
-      :fixed="fixed"
-      app
-    >
+    <v-footer :fixed="fixed" app >
       <span>&copy; 2019</span>
       
     </v-footer>
@@ -36,25 +29,26 @@ export default {
       pages:[
         {
           title: '完成までの流れ',
-          to: '/'
+          to: '/completionflow'
         },
         {
           title: '施工事例',
-          to: '/'
+          to: '/example'
         },
         {
           title: '会社概要',
-          to: '/'
+          to: '/description'
         },
         {
           title: 'お問い合わせ',
-          to: '/'
+          to: '/contact'
         },
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: '株式会社服部エクステリア'
+      title: '株式会社服部エクステリア',
+      link: '/'
     }
   }
 }

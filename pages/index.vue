@@ -1,7 +1,10 @@
 <template>
-<v-main>
-  <v-img class="first-view-img" src="/first-view.jpg"></v-img>
-</v-main>
+  <main>
+    <div class="example">
+      <v-img class="first-view-img" src="/home6.jpg"></v-img>
+      <h1>いい感じのキャッチコピー</h1>
+    </div>
+  </main>
 </template>
 
 <script>
@@ -11,7 +14,5 @@ export default {
 </script>
 
  <style>
- .first-view-img {
-   max-height: 100vh
- }
+
  </style>
