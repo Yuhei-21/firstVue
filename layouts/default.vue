@@ -48,7 +48,6 @@ export default {
       right: true,
       rightDrawer: false,
       title: '株式会社服部エクステリア',
-      link: '/'
     }
   }
 }
