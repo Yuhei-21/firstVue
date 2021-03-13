@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-app-bar :clipped-left="clipped" fixed app >
+    <v-app-bar :clipped-left="clipped" fixed app color="#ffffff">
       <img src="hattorilogo.jpg" class="mr-1" >
       <v-toolbar-title>{{title}}</v-toolbar-title>
       <v-spacer />
@@ -11,7 +11,7 @@
       
     </v-content>
     <v-footer :fixed="fixed" app >
-      <span>&copy; 2019</span>
+      <span>服部エクステリア</span>
       
     </v-footer>
   </v-app>
