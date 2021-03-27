@@ -2,7 +2,7 @@
   <v-app dark>
     <v-app-bar :clipped-left="clipped" fixed app color="#ffffff">
       <img src="hattorilogo.jpg" class="mr-1" >
-      <v-toolbar-title>{{title}}</v-toolbar-title>
+      <v-toolbar-title @click="$router.push('/')"> {{title}} </v-toolbar-title>
       <v-spacer />
       <nuxt-link :to="page.to" class="ml-3" v-for="page in pages" :key="page.title">{{page.title}}</nuxt-link>
     </v-app-bar>
@@ -10,9 +10,10 @@
       <nuxt />
       
     </v-content>
-    <v-footer :fixed="fixed" app >
-      <span>服部エクステリア</span>
-      
+    <v-footer :fixed="fixed" app color="#ffffff" class="d-flex justify-end">
+      <span class="d-flex justify-center">お問い合わせ</span>
+      <v-icon class="icon">mdi-cellphone</v-icon>080-1508-3239
+      <v-icon class="icon">mdi-deskphone</v-icon>072-477-4449
     </v-footer>
   </v-app>
 </template>
